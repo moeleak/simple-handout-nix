@@ -1,4 +1,4 @@
-#import "@preview/simple-handout:0.1.0": define-config
+#import "packages/simple-handout-template/src/lib.typ": define-config
 
 /// 以下字体配置使用思源（Source Han）家族字体，
 /// - SongTi: 宋体，正文字体，通常对应西文中的衬线字体
