@@ -53,7 +53,9 @@
             version = "1.0.0";
             src = ./.;
             nativeBuildInputs = tools;
+            env.TYPST_FONT_PATHS = pkgs.lib.strings.concatStringsSep ":" fonts;
             buildPhase = ''
+              unset SOURCE_DATE_EPOCH
               typst compile main.typ main.pdf
               gs -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed.pdf main.pdf
             '';
