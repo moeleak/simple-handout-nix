@@ -1,0 +1,3 @@
+[submodule "packages/simple-handout-template"]
+	path = packages/simple-handout-template
+	url = https://github.com/moeleak/simple-handout-template
