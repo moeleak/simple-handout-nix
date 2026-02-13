@@ -19,6 +19,7 @@
           cuti
           tablem
           i-figured
+          kouhu
         ]);
 
         tools = [

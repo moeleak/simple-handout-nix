@@ -1,4 +1,5 @@
 #import "packages/simple-handout-template/src/lib.typ": define-config
+#import "@preview/kouhu:0.2.0": kouhu
 
 /// 以下字体配置使用思源（Source Han）家族字体，
 /// - SongTi: 宋体，正文字体，通常对应西文中的衬线字体
@@ -59,16 +60,16 @@
 ) = define-config(
   info: (
     title: (
-      title: "Lorem Ipsum",
-      subtitle: "Dolor Sit Amet",
+      title: "文章",
+      subtitle: "副标题",
     ),
     authors: (
       (
-        name: "Lorem Ipsum",
+        name: "我是作者",
         email: "lorem@example.com",
       ),
     ),
-    version: "0.0.0",
+    version: "1.0.0",
   ),
   font: font-family,
 )
@@ -101,33 +102,24 @@
 // Preface Page
 #preface[
 
-#lorem(90)
+#kouhu(indices: range(1, 2))
 
-#lorem(90)
-
-#lorem(18)
-
-1. #lorem(12)
-2. #lorem(12)
-3. #lorem(12)
-4. #lorem(12)
-5. #strike[#lorem(6)]
-
-#lorem(20)
+1. #kouhu(length: 10) 
+2. #kouhu(length: 10) 
 
 #align(center)[
   #grid(columns: 3, gutter: 8pt, align: top,
     figure(
       placeholder(width: 100%, height: 8cm),
-      caption: [#lorem(4)],
+      caption: [#kouhu(length: 4)],
     ),
     figure(
       placeholder(width: 100%, height: 8cm),
-      caption: [#lorem(4)],
+      caption: [#kouhu(length: 4)],
     ),
     figure(
       placeholder(width: 100%, height: 8cm),
-      caption: [#lorem(4)],
+      caption: [#kouhu(length: 4)],
     ),
   )
 ]
@@ -143,35 +135,34 @@
 
 #show: main-matter
 
-= #lorem(2)
+= #kouhu(length: 2)
 
-#lorem(40)
-#lorem(30)
+#kouhu(indices: 1)
 
-== #lorem(2)
+== #kouhu(length: 2)
 
 #lorem(50)
 
-== #lorem(2)
+== #kouhu(length: 2)
 
 #lorem(35)
 
-=== #lorem(2)
+=== #kouhu(length: 2)
 
 #lorem(30)
 
-=== #lorem(2)
+=== #kouhu(length: 2)
 
 #lorem(45)
 
 = #lorem(3)
 
-== #lorem(2)
+== #kouhu(length: 2)
 
 #align(center)[
   #figure(
     placeholder(width: 45%, height: 6cm),
-    caption: [#lorem(4)]
+    caption: [#kouhu(length: 4)]
   )
 ]
 
@@ -206,7 +197,7 @@
       placeholder(width: 100%, height: 5cm),
       placeholder(width: 100%, height: 5cm),
     ),
-    caption: [#lorem(4)]
+    caption: [#kouhu(length: 4)]
   )
 ]
 
@@ -235,14 +226,14 @@
 
 #lorem(55)
 
-== #lorem(4)
+== #kouhu(length: 4)
 
 #lorem(24)
 
-1. #strong[#lorem(2)]：#lorem(22)
-2. #strong[#lorem(2)]：#lorem(22)
-3. #strong[#lorem(2)]：#lorem(22)
-4. #strong[#lorem(2)]：#lorem(22)
+1. #strong[#kouhu(length: 2)]：#lorem(22)
+2. #strong[#kouhu(length: 2)]：#lorem(22)
+3. #strong[#kouhu(length: 2)]：#lorem(22)
+4. #strong[#kouhu(length: 2)]：#lorem(22)
 
 #lorem(18)
 
@@ -252,7 +243,7 @@
 
 #lorem(80)
 
-= #lorem(2)
+= #kouhu(length: 2)
 
 #lorem(70)
 
@@ -271,11 +262,11 @@
 
 #lorem(60)
 
-1. #strong[#lorem(2)]：#lorem(20)
-2. #strong[#lorem(2)]：#lorem(20)
-3. #strong[#lorem(2)]：#lorem(20)
-4. #strong[#lorem(2)]：#lorem(20)
-5. #strong[#lorem(2)]：#lorem(20)
+1. #strong[#kouhu(length: 2)]：#lorem(20)
+2. #strong[#kouhu(length: 2)]：#lorem(20)
+3. #strong[#kouhu(length: 2)]：#lorem(20)
+4. #strong[#kouhu(length: 2)]：#lorem(20)
+5. #strong[#kouhu(length: 2)]：#lorem(20)
 
 #lorem(40)
 
